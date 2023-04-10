@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> ĐP </a>
+
+        <nav class="navbar">
+
+            <a href="home.html">Trang chủ</a>
+            <a href="shop.html">Cửa hàng</a>
+            <a href="about.html">Tin tức</a>
+            <a href="review.html">Giới thiệu</a>
+
+            <a href="contact.html">Liên hệ</a>
+
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>56.97</span> </h3>
+            <a href="#" class="btn">checkout cart</a>
+        </div>
+
+
+    </header>
+
+    <section class="home">
+
+        <div class="slides-container">
+
+            <div class="slide active">
+                <div class="content">
+                    <span>Tươi và hữu cơ</span>
+                    <h3>lên tới 50%</h3>
+                    <a href="#" class="btn">Đến cửa hàng</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>Tươi và hữu cơ</span>
+                    <h3>lên tới 50%</h3>
+                    <a href="#" class="btn">Đến cửa hàng</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>Tươi và hữu cơ</span>
+                    <h3>lên tới 50%</h3>
+                    <a href="#" class="btn">Đến cửa hàng</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+    </section>
+    <section>
+        <form action="">
+            <div class="container">
+                <h1>Form Đăng Ký</h1>
+                <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Nhập Email" name="email" required>
+                <label for="psw"><b>Mật Khẩu</b></label>
+                <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+                <label for="psw-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+                <input type="password" placeholder="Nhập Lại Mật Khẩu" name="psw-repeat" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ Đăng Nhập
+                </label>
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

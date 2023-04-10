@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"
+        integrity="sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: rgb(16, 124, 124);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn-toggle-menu {
+        cursor: pointer;
+        display: none;
+    }
+
+    #toggle-menu {
+        display: none;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0px, 15px;
+    }
+
+    nav {
+        background-color: aliceblue;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 10px;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 8px, 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        transition: 0.4s;
+    }
+
+    .menu li.active a {
+        color: aliceblue;
+    }
+
+    .menu li a:hover {
+        color: aliceblue;
+        background-color: black;
+    }
+
+    @media screen and {
+        max-width: 768px
+    }
+
+        {
+        nav {
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .btn-toggle-menu {
+            display: unset;
+        }
+
+        #toggle-menu:checked+.menu {
+            display: none;
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="">Phong</a>
+            <label for="toggle-menu" class="btn-toggle-menu">
+                <i class="fas-fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="menu">
+                <li class="active"><a href="">HOME</a></li>
+                <li class=""><a href=""></a> Sản phẩm</li>
+                <li class=""><a href=""></a> News</li>
+                <li class=""><a href=""></a> About</li>
+                <li class=""><a href=""></a> Login</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
